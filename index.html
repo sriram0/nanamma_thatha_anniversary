@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Anniversary Thatha and Nanamma</title>
+    <link rel="icon" href="logo.png">
+    <style>
+        span{
+            color: rgb(0, 255, 0);
+            font-size: 20px;
+            font-weight: 1000;
+        }
+        #a{
+            position: relative;
+            top:30px;
+            left: 5px;
+        }
+        body{
+            background-color: blue;
+        }
+        h1{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy 41st Anniversary Thatha and Nanamma!!!</h1>
+    <span id="a"></span><br>
+    <img width="25%"><br>
+    <span id="b"></span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        let t=1950
+        const f=["41 is the 13th prime number", "41 is the 6th super prime number", "41 is the sum of the first 6 prime numbers"]
+        setInterval(function(){
+            l=1
+            if(t>=1957){
+                l++
+            }
+            if(t>=1962){
+                l++
+            }
+            if(t>=1982){
+                l++
+            }
+            if(t>=1983){
+                l++
+            }
+            if(t>=1984){
+                l++
+            }
+            if(t>=1988){
+                l++
+            }
+            if(t>=1992){
+                l++
+            }
+            if(t>=1993){
+                l++
+            }
+            if(t>=2009){
+                l++
+            }
+            if(t>=2012){
+                l++
+            }
+            if(t>=2013){
+                l++
+            }
+            if(t>=2016){
+                l++
+            }
+            if(t>=2019){
+                l++
+            }
+            if(t>=2020){
+                l++
+            }
+            if(t>2024){
+                t=1950
+            }
+            $("#a").text(t)
+            $("#b").text(f[t%f.length])
+            $("img").attr("src", "i"+l+".jpg")
+            t++;
+        }, 1000)
+    </script>
+</body>
+</html>
